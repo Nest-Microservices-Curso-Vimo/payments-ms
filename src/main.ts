@@ -32,6 +32,8 @@ async function bootstrap() {
 
   await app.listen(envs.port);
 
+  logger.log(`Health Check configured`);
+
   logger.log(`Payments-ms is running on port ${envs.port}`);
 }
 bootstrap();
